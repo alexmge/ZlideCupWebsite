@@ -1,0 +1,13 @@
+<aside>
+    <div class="Title"><h2>Latest News</h2></div>
+    <br>
+    <div class="newsWidget">
+        {{#each partials.newsContext}}
+        <div class = "news">
+            <h3>{{heading}}</h3>
+            {{body}}
+        </div>
+        <br>
+        {{/each}}
+    </div>
+</aside>

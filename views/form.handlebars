@@ -1,0 +1,47 @@
+<center>
+    <div class="form-container center">
+        <div class="form-child">
+            <form action="/staff/addnew" method="POST" style="width:250" autocomplete="off">
+                <div class="flex-group">
+                    <label for='ingamename' class="Title" style="color:white;">In-game Name<br><br><input type=text
+                            id='gamename' name='gamename' class='form-control' required></label>
+                </div>
+                <br>
+                <div class="flex-group">
+                    <label for='dname' class="Title" style="color:white;">Discord Username<br><br>
+                        <input type=text id='dname' name='dname' class='form-control' required></label>
+
+                </div>
+                <br><br>
+                <div>
+                    <button type=submit class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-child">
+            <ul class="news" style="width: fit-content;max-height:324px;overflow-y:scroll;">
+                <b><u><h4>List of participants</h4></u></b>
+                {{>playerlist list=playerlist}}
+            </ul>
+        </div>
+        <div class="form-child">
+            <form action="/staff/remove" method="POST" style="width:250" autocomplete="off">
+                <div class="flex-group">
+                    <label for='ingamename' class="Title" style="color:white;">In-game Name<br><br><input type=text
+                            id='gamename' name='gamename' class='form-control' required></label>
+                </div>
+                <br>
+                <div class="flex-group">
+                    <label for='dname' class="Title" style="color:white;">Discord Username<br><br>
+                        <input type=text id='dname' name='dname' class='form-control' required></label>
+
+                </div>
+                <br><br>
+                <div>
+                    <button type=submit class="btn btn-red">Unregister</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</center>
